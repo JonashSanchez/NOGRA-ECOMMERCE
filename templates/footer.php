@@ -3,7 +3,7 @@
         <div class="row text-center text-md-start">
             
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CYK Online Store</h5>
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">STOIC  Store</h5>
                 <p>
                     Your one-stop shop for the latest and most stylish products. Quality you can trust, delivered with care.
                 </p>
