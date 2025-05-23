@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2025 at 11:53 AM
+-- Generation Time: May 23, 2025 at 03:49 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -71,6 +71,13 @@ CREATE TABLE `products` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `category_id`, `name`, `description`, `price`, `slug`, `image_path`, `created_at`, `updated_at`) VALUES
+(8, 2, 'Chrome Hearts T-shirt', '100% Authentic Chrome Hearts Multi Color Cross T-shirt Size M\r\n', 50000.00, 'chrome-hearts-t-shirt', 'uploads/chrome hearts.jpg', '2025-05-23 13:48:17', '2025-05-23 07:48:17');
+
 -- --------------------------------------------------------
 
 --
@@ -115,6 +122,13 @@ CREATE TABLE `users` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `address`, `phone`, `birthdate`, `created_at`, `updated_at`) VALUES
+(6, 'nash', 'batiisjimin@gmail.com', '$2y$10$1CjEZfd8B6phBYaRPuL9yOydRryjVGSUUSizyEUTAEY4U9itEXvN2', NULL, NULL, NULL, '2025-05-23 13:46:38', '2025-05-23 13:46:38');
 
 --
 -- Indexes for dumped tables
@@ -177,7 +191,7 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `product_categories`
@@ -189,7 +203,7 @@ ALTER TABLE `product_categories`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
